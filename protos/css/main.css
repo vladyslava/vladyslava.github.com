@@ -1,0 +1,432 @@
+ * {margin: 0; padding: 0; color: #66717e; font-family:  Trebuchet MS;}
+ ul {list-style: none;}
+
+body {width: 100%;}
+a img {border: none;}
+a:hover {text-decoration:none;}
+
+/*-------big number year----*/	
+.title-year {
+	color: #dadce0;
+	font-size: 290px;
+	float: right;
+	width: 35%;
+	padding: 0px;
+	margin: 0px;
+	line-height: 190px;
+	text-align: right;
+	overflow: hidden;
+	height: 235px;
+	display: block;
+}	
+
+.s-item {
+	color: #66717E;
+}
+.active {
+	color: #D93F3F;
+	font-size: 16px;
+}
+.service li { 
+	padding: 2px 3px 5px 0px;
+	font-size: 13px;
+	color: #66717E;
+}
+.service {
+	padding: 2px 0px 20px;
+}
+ /*-----Резиновая верстка из трех блоков-----*/
+.centered {
+  margin: 0 auto;
+  width:100%;
+  min-height: 200px;
+  clear: both;
+  margin-top: 20px;
+ }
+.info-block {
+	width: 31%;
+	float: left;
+	
+}
+.trinity {
+	width: 66%;
+	float: right;
+}
+.trinit-one {
+	width: 30%;
+	float: left;
+	margin-right: 2%;
+
+}
+/*--------------------------------*/
+.block-top {
+	position: relative;
+	height: 80px;
+	display: block;
+}
+.block-topm {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.topmenu {
+	position: relative;
+	display: block; 
+	overflow: hidden;
+	height: 80px;
+}
+
+.topmenu-fixed {
+	position: fixed;
+	height: 77px;
+	top: 0px;
+	width: 100%;
+	}
+/*--------------MENU--------------*/
+ul.subpages {
+		font: 14px Verdana, Geneva, sans-serif;
+		text-align: justify;
+		border-bottom: 2px solid #e5e9ed;
+		
+		/* Обнуляем для родителя*/
+		line-height: 0;
+		font-size: 1px; /* 1px для Opera */
+		
+		/* Лекарство для IE6-7*/		
+		text-justify: newspaper;
+		zoom:1;
+		
+		/* Включаем в работу последнюю строку*/		
+		text-align-last: justify;	
+	}
+	ul.subpages:after {
+			width: 100%; 
+			height: 0px;
+			visibility: hidden;
+			overflow: hidden;
+			content: '';
+			display: inline-block;
+
+	}
+		ul.subpages li  {
+			display: inline-block;
+			text-align: left;
+			margin: 20px 0px;
+			
+			/* Востанавливаем у потомков, кроме последнего*/
+			line-height: normal;
+			font-size: 13px;
+			font-weight:bold;
+			
+			/* Без него в Opera будет отступ под элементами */
+			vertical-align: top; 
+			
+			/* эмуляция inline-block для IE6-7*/
+			//display : inline;
+			//zoom : 1;
+		}
+
+/*--------------MENU--------------*/
+
+.info-block p {
+	color: #84919D;
+	font-size:14px;
+	margin-bottom: 15px;
+	line-height: 130%;
+}
+.date-open {
+	font-weight: bold;
+	font-size: 14px;
+}
+h1.title-entry {
+	color: #d93f3f;
+	font-size: 35px;
+}
+
+.navigation {
+	height: auto;
+	overflow: hidden;
+	padding: 15px 2% 10px 10px;
+}
+.sub-menu {display: none;}
+
+
+.main-menu li {float: left; display: inline;}
+.main-menu li.first {margin-top: -4px;}
+	.main-menu li a {
+		display: block;
+		margin: 0 5px;
+		color: #0f6791;
+		text-decoration: none;
+		border-bottom: 1px solid #0f6791;
+		font-size: 14px;
+		height: 16px;
+	}
+	.first a.all-sercice {font-size: 19px; height: 21px; line-height: 120%;}
+	.main-menu li a:hover { border-bottom: none;}
+
+	/*.main-menu li.first {
+		background: url("../images/menu_item.gif") no-repeat right;
+		padding-right: 13px;
+	}*/
+	.main-menu li.second {
+		padding-left: 5px;
+		border-left: 1px solid #ccc;
+		margin-left: 5px;	
+	}
+
+.phone-call {padding-left: 7px;}
+.phone-number {float: right;}
+	.phone-number span {text-align: right;display: inline-block; zoom:1;}
+	.phone-text {font-size: 10px; width: 100px; line-height: 14px; font-weight: bold;}
+	.number {font-size: 27px; font-weight: bold;}
+	.kod {font-size: 18px; font-weight: bold; color: #84919D;}
+
+	.navigation .number {font-size: 27px; font-weight: normal;  width: 118px; }
+	.navigation .kod {font-size: 17px; color: #525F66;}
+
+.logo-block {
+	background: url("../images/bg-img.jpg") no-repeat;
+	height: 159px;
+	width: 100%;
+}
+.protos-logo {width: 206px; height: 90px;}
+.logo {margin-top: 30px;}
+.for-bg { 
+	overflow: hidden; 
+	height: auto;
+	padding: 0 2% 0 4%;
+	z-index: 1;
+}
+.b-sec {
+	clear: both;
+	margin-left: 25px;
+	height: auto;
+	margin: 0 auto;
+	
+}
+/*.qin {min-height: 220px;}*/
+.year-3 {background: url("../images/year3.gif") no-repeat right bottom}
+.year-6 {background: url("../images/year6.gif") no-repeat right bottom}
+.year-8 {background: url("../images/year8.gif") no-repeat right bottom}
+.year-12 {background: url("../images/year12.gif") no-repeat right bottom}
+.b-sec-main {float: left; width: 55%;}
+
+.sect .qoutes {margin-top: 10px;}
+
+.qoutes {
+width: 95%;
+background: url("../images/ql.gif") no-repeat right bottom;
+margin-left: -27px;
+padding-right: 25px;
+}
+	.qoutes p {
+		background: url("../images/qr.gif") no-repeat left 4px;
+		padding-left: 27px;
+		font-weight: bold;
+		color: #66717e;
+		line-height: 27px;
+		font-size: 21px;
+	}
+	
+	.title-item {padding-top: 10px;}
+		.av {border: none; float: left; margin-right: 10px;margin-top: 3px;}
+		.name {color: #66717e; font-size: 14px; display: block; font-weight: bold; line-height: 130%;}
+		.post {color: #84919D; font-size: 12px; display: block; width: 45%; line-height: 150%;}
+
+.b-sec-info {
+	font-size: 10px;
+	padding-left: 20px;
+	width: 35%;
+	float: left;
+	position: relative;
+}
+	.b-sec-info .phone-number {float: none; margin-bottom: 15px;}
+	.b-clock {
+		padding-left: 15px; 
+		background: url("../images/clock.png") no-repeat left; 
+		font-weight: bold;
+		color: #84919D;
+	}
+	.b-call {font-size:14px; font-weight: bold; color: #555F69;}
+
+form.send-nmb {
+	background: url("../images/field.png") no-repeat;
+	width: 438px;
+}
+
+.b-sec-info fieldset {
+	padding:5px 10px 12px 15px;
+	border: none;
+	display: block;
+	overflow: hidden;
+}
+.b-sec-info	.row {display: inline-block; float: left;}
+.b-sec-info	.row label{
+		display: block;
+		font-size: 10px;
+		padding: 5px 0 3px;
+		font-weight: bold;
+		color: #333333;
+		line-height: 130%;
+	}
+.b-sec-info	.row {margin-right:3px;}
+.b-sec-info	.row .inp {
+		width: 144px;
+		background: url(../images/input.png) no-repeat 0 0;
+		border: none;
+		height: 36px;
+		
+		font-size: 24px;
+		font-weight: lighterq1;
+		
+	}
+.b-sec-info .send {
+	background: url("../images/send.png") no-repeat;
+	height: 31px;
+	margin-top: 15px;
+	width: 110px;
+	padding-top: 30px;
+	margin-top: 25px;
+	border: none;
+	cursor: pointer;
+}
+.b-sec-info .manag {width: 438px;
+	text-align: right;
+	display: block;
+	font-size: 12px;
+	line-height: 130%;
+	font-weight: bold;
+	color: #84919D;
+	margin-top: 5px;
+}
+
+.sect-one .name {font-size: 17px; font-weight: bold;}
+.sect-one .post {font-size: 12px; font-weight: bold; width: 47%;}
+.sect-one {background: url("../images/bg_main.png") repeat-x bottom;}
+
+
+.main-state { margin: 0 auto; padding: 45px 2% 0 4%;position: relative; display: block; overflow: hidden;}
+.main-state h1, .main-state h2 {text-align: center;}
+.main-state h1 {color: #d93f3f; font-weight: bold; font-size: 45px;}
+.main-state h2 {color: #66717e; font-weight: bold; font-size: 17px; margin-bottom: 5px;}
+.subpages li a {text-decoration: none; border-bottom: 1px solid #66717e; color: #66717e; font-weight: bold; line-height: 14px; font-size: 14px;}
+.subpages li a:hover {border-bottom: none;}
+.subpages li a span {text-align: center;color: #b2b2b2; font-size: 11px;padding-bottom: 5px; font-weight: bold; display: block}
+
+.uslugi {font-size: 16px; color: #46576A;}
+
+.sect-one {padding: 30px 2% 30px 4%;}
+.sect-one .b-sec-main {width: 56%; background: url("../images/line.png") no-repeat right top; height: 231px;}
+.sect-one .qoutes {background: url("../images/qoutesl.gif") no-repeat right bottom; margin-left: -30px;}
+.sect-one .qoutes p {background: url("../images/qoutesr.gif") no-repeat left 4px; padding-left: 30px;line-height: 33px; font-size: 27px;}
+.sect {padding-top: 45px; background: url("../images/bg_light.png") repeat-x bottom;}
+.sect .qin {padding-bottom: 35px; border-bottom: 1px solid #ccc; display: table; zoom: 1; width: 100%;}
+.info-block h3 {font-style: italic; font-size: 16px;} 
+.trinity h3 {font-style: italic; font-size: 16px;}
+
+.gallery img {margin-right: 3px;}
+.gallery  {padding-top: 5px;}
+.summ {clear: both; margin: 15px 0 35px; border-top: 1px solid #fff; padding-top: 15px;}
+.nadzor {padding-top: 45px; background: url("../images/bg_light.png") repeat-x bottom;}
+.nadzor .b-sec-main {padding-bottom: 10px;}
+.nadzor .service li a{ 
+	color: #065F8C;
+}
+.about {
+		padding-top: 45px;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bold;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #ccc;
+		width: 95%;
+}
+.bh {font-size: 45px; width: 80%; text-align: center; margin: 0 auto; color: #D93F3F; margin-bottom: 30px;}
+.bs {font-size: 20px; color: #66717E;}
+.txt-copyright { float: right; color: #999; font-size: 14px;}
+.contact {color: #66717E;margin-bottom: 30px;}
+.contact p {font-size: 14px; color: #66717E;}
+.contact a {color: #065F8C}
+
+.summ h3 {font-size: 16px; color: #84919D; font-style: italic; font-weight: lighter;}
+.summ p {font-size: 27px; color: #84919D;}
+.summ a {text-decoration: none;}
+span.bn {font-size: 60px; border-bottom: 1px dashed #84919D; color: #84919D; vertical-align: middle; z-index: 1; cursor:pointer;}
+span.bn:hover {border-bottom: none;}
+span.bnl {font-size: 60px; color: #84919D; vertical-align: middle;z-index: 1;}
+
+.numbcomm {font-weight: bold;}
+
+.numbcomm div.block-comm {font-size: 70px; color: #BFC1C5; font-weight: bold; line-height: 100%; text-align: left;}
+.numbcomm .bcol {font-size: 170px; color: #D83F3F; line-height: 130%;}
+.numbcomm .bcom {font-size: 95px; color: #D83F3F; font-weight: bold;line-height: 100%;}
+
+.info-block .official {margin-top: 20px;}
+.official {
+	padding-left: 15px;
+	display: block;
+	background: url("../images/redarr.png") no-repeat left top;
+	color: #065F8C;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 120%;
+	
+}
+
+.strahov .trinit-one {width: 95%;}
+.partners {width: 45%; float: left;}
+	.partners h3 {padding-bottom: 5px;}
+	
+.struslugi {width: 45%; float: left;}
+
+.year-12 .title-entry {width: 95%;}
+.gall {padding: 5px 0 10px;}
+.galimg {margin-right: 5px;}
+.footer {width: 95%; margin: 0 auto;padding-top: 10px;}
+
+.strah-partn li {display: inline; margin-right: 5px; padding: 5px 0;}
+.strah-partn li img.rsk {margin: 0 30px;}
+.strah-partn li img.alfa {margin-left: 7px;}
+.forseven {background: url("../images/nadzor_7.gif") repeat-x; height: 272px; clear: left;}
+.forseven img {position: relative; float: right;}
+
+.wrap-forul {
+	background: #fff;
+	width: 100%;
+	vertical-align: middle;
+	z-index: 1000;
+}
+.sticky-wrapper .is-sticky {overflow: hidden;display: block; width: 94%;}
+.sticky-wrapper .is-sticky ul.subpages {margin-top: -32px;}
+.wrap_fortop {
+	display: block;
+	overflow: hidden;
+	vertical-align: top;
+	position: relative;
+	width: 100%;
+
+}
+
+.wrap, .helpme {
+display: block;
+overflow: hidden;
+vertical-align: top;
+position: relative; 
+}
+.block {height: 56px;}
+.block-fixed {
+position: fixed;
+height: 56px;
+background: #fff;
+width: 100%;
+z-index: 1000;
+}
+
+.wr-com {position: relative; overflow: hidden; display: inline-block; width: 350px; height: 100px;}
+.wr-com .bcom {position: absolute; top: 17px;}
+.left-c {padding-left: 45px;}
+
+
+

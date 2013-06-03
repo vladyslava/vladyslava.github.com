@@ -1,0 +1,714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>Protos</title>
+	<meta charset="utf-8">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+	</script>
+	<script src="js/jquery.anchor.js" type="text/javascript"></script>
+	<script src="js/jquery.sticky.js">
+     </script>
+	 <script>
+           $(document).ready(function(){
+                    
+                    $("#block-top").sticky({topSpacing:0});
+                   
+          });
+     </script>
+     <script>
+	
+	  var i = 19987;
+	  
+	  function toStringWithSpaces(id)
+	  {
+	    var s = id.toString();
+	    var s1 = "";
+	    while (s.length > 3)
+	    {
+	      s1 = " " + s.substring(s.length - 3, s.length) + s1;
+	      s = s.substring(0, s.length - 3);
+	    }
+	    return s + s1;
+	  }
+	  
+	  function increaseCounter()
+               {
+			   		if($.browser.msie)
+					{
+					  i++;
+					  $("#comments_number_a").html(toStringWithSpaces(i));
+					  return;
+					}
+
+                    // break into stable and moving part
+                    
+                    var a = "";
+                    var b = "";
+                    {
+                      var s1 = toStringWithSpaces(i);
+                      var s2 = toStringWithSpaces(i + 1);
+                      var len = s1.length;
+	              
+	              for (var j = 0; j < len; ++j)
+	              	if (s1[j] != s2[j])
+	              	{
+	              	  a = s1.substring(0, j);
+	              	  b = s2.substring(j, len)  + "<br />" + s1.substring(j, len);
+	              	  break;
+	              	}
+	              
+                    }
+                    
+					  $("#comments_number_a").html(a);
+                      $("#comments_number_b").stop();
+                      $("#comments_number_b").css('top', -78);
+                      $("#comments_number_b").css('left', $("#comments_number_a").width() - 45);
+                      $("#comments_number_b").html(b);
+                      $("#comments_number_b").animate({"top" : "17px"}, "slow")
+                    
+                    i++;
+               };
+	  
+
+          $(function()
+          {
+            $("#comments_number_a").html(toStringWithSpaces(i));
+            $("#comments_number_b").html("");
+            $("#count-comm").click(increaseCounter); 
+          });
+
+     </script>
+	
+</head>
+<body>
+	<div class="navigation">
+		
+		<ul class="main-menu">
+			<li class="first">
+				<a href="#" class="all-sercice">Все услуги</a>
+			</li>
+			<li class="second">
+				<a href="#">О Компании</a>
+			</li>
+			<li>
+				<a href="#">История</a>
+			</li>
+			<li>
+				<a href="#">Вопросы и ответы</a>
+			</li>
+			<li>
+				<a href="#">Законы и постановления</a>
+			</li>
+			<li>
+				<a href="#">Контактные данные</a>
+			</li>
+		</ul>
+		<div class="phone-number">
+			<span class="kod">(495)</span>
+			<span class="number">228-03-25</span>
+			<span class="phone-text">МНОГОКАНАЛЬНЫЙ ЕДИНЫЙ ТЕЛЕФОН</span>
+		</div>
+	</div>
+	<div class="logo-block">
+		<a href="#" class="protos-logo"><img src="images/logo.png" alt="logo" class="logo"/></a>
+	</div>
+	<div class="for-bg sect-one">
+		<div class="b-sec qin">
+			<div class="b-sec-main">
+				<div class="qoutes">
+					<p>Помогаем решать простые и&nbsp;комплексные задачи в&nbsp;области стоительства, проектирования. У&nbsp;нас большой опыт. Всерьез и&nbsp;надолго!</p>
+				</div>
+				<div class="title-item">
+					<img src="images/ava.png" alt="avatar" class="av" />
+					<span class="name">Дмитрий Станиславович Алексеев</span>
+					<span class="post">Генеральный директор и&nbsp;основатель Протос Консалтинг</span>
+				</div>
+			</div>
+
+			<div class="b-sec-info">
+				<div class="phone-call">
+					<p class="b-clock">БУДНИ С 9:00 ДО 19:00 (МОСК.ВРЕМЯ)</p>
+					<p class="b-call">ЗВОНИТЕ ПО ТЕЛЕФОНУ:</p>
+					<div class="phone-number">
+						<span class="kod">(495)</span>
+						<span class="number">228-03-25</span>
+					</div>
+					<p class="b-clock">КРУГЛОСУТОЧНО:</p>
+					<p class="b-call">ЗАКАЖИТЕ ЗВОНОК:</p>
+				</div>
+				<form action="" class="send-nmb" method="post" id="send-frm"> 
+					<fieldset> 
+						<div class="row">
+							<label for="id-firstname">ВАШЕ ИМЯ:</label>
+							<input type="text" name="name" id="id-firstname" class="inp reqfield">
+						</div>
+						<div class="row">
+							<label for="id-phonenmb">ТЕЛЕФОН:</label>
+							<input type="text" name="phone" id="id-phonenmb" class="inp reqfield">
+						</div>
+						<div class="row">
+							<input type="submit" text="" class="send">
+						</div>
+					</fieldset>
+				</form>
+				<span class="manag">Менеджер сам свяжется с вами. Звонок бесплатный.</span>
+			</div> 
+		</div>
+	</div>
+
+	<div class="b-sec main-state">
+		<h1>ПРОТОС ГРУПП</h1>
+		<h2>СТРУКТУРА И ИСТОРИЯ РАЗВИТИЯ</h2>
+			<div class="wrap_fortop">
+				<div id="block-top" class="wrap-forul">
+					<ul class="subpages">
+						<li><a href="#prConsalt" class="anchorLink"><span>-2003-</span>ПРОТОС КОНСАЛТИНГ</a></li>
+						<li><a href="#prEksprt" class="anchorLink"><span>-2006-</span>ПРОТОС ЭКСПЕРТИЗА</a></li>
+						<li><a href="#prStrahov" class="anchorLink"><span>-2006-</span>ПРОТОС СТРАХОВАНИЕ</a></li>
+						<li><a href="#prNadzor" class="anchorLink"><span>-2007-</span>НАДЗОР-ИНФО</a></li>
+						<li><a href="#prIpk" class="anchorLink"><span>-2008-</span>ИПК ПРОМБЕЗОПАСНОСТЬ</a></li>
+						<li><a href="#prCentr" class="anchorLink"><span>-2012-</span>ЦЕНТР СЕРТИФИКАЦИИ</a></li>
+					</ul>
+				</div>	
+			</div>
+	</div>
+	
+	<div class="for-bg sect" name="prConsalt" id="prConsalt">	
+		<div class="b-sec qin year-3">
+			<div class="b-sec-main">
+				<h1 class="title-entry">ПРОТОС КОНСАЛТИНГ</h1>	
+				<span class="date-open">ОСНОВАН 25 ФЕВРАЛЯ 2003</span>
+
+				<div class="qoutes">
+					<p>Помогаем решать простые и&nbsp;комплексные задачи в&nbsp;области стоительства, проектирования. У&nbsp;нас большой опыт. Всерьез и&nbsp;надолго!</p>
+				</div>
+				<div class="title-item">
+					<img src="images/face.gif" alt="avatar" class="av" />
+					<span class="name">Дмитрий Станиславович Алексеев</span>
+					<span class="post">Генеральный директор и основатель Протос Консалтинг</span>
+				</div>
+			</div>
+			
+		
+		</div>
+
+		<div class="centered">
+			<div class="info-block">
+				<h3>История</h3>
+				<div class="gall">
+					<img src="images/gallery/gal1.png" class="galimg"/>
+					<img src="images/gallery/gal2.png" class="galimg"/>
+					<img src="images/gallery/gal3.png" class="galimg"/>
+					<img src="images/gallery/gal4.png" class="galimg"/>
+					<img src="images/gallery/gal5.png" class="galimg"/>
+				</div>
+				<p>Группа компаний Протос была основана в&nbsp;2003 году выпускниками Российского Химико- Технологического Университета им&nbsp;Д.И. Менделеева, специалистами в&nbsp;химической и&nbsp;нефтегазовой промышленности. За&nbsp;недолгий срок мы&nbsp;стали несомненными лидерами на&nbsp;рынке консалтинговых услуг и&nbsp;вошли в&nbsp;пятерку самых уважаемых экспертных организаций России.</p>
+				<p>Группа компаний Протос была основана в&nbsp;2003 году выпускниками Российского Химико- Технологического Университета им&nbsp;Д.И. Менделеева, специалистами в&nbsp;химической и&nbsp;нефтегазовой промышленности. За&nbsp;недолгий срок мы&nbsp;стали несомненными лидерами на&nbsp;рынке консалтинговых услуг и&nbsp;вошли в&nbsp;пятерку самых уважаемых экспертных организаций России.</p>
+
+				<a class="official" href="">Посетить официальный блог компании Протос Консалтинг</a>
+				
+			</div>
+			<div class="trinity">
+				<h3>Услуги</h3>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active " href="">CPO</a></li>
+						<li><a class="s-item" href="">CPO в&nbsp;строительстве</a></li>
+						<li><a class="s-item" href="">CPO в&nbsp;проектировании</a></li>
+						<li><a class="s-item" href="">CPO в&nbsp;изыскании</a></li>
+						<li><a class="s-item" href="">CPO в&nbsp;области энергоаудита</a></li>
+						<li><a class="s-item" href="">CPO в&nbsp;области пожарной безопасности</a></li>
+						<li><a class="s-item" href="">CPO в&nbsp;области промышленной безопасности</a></li>
+						
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">ISO</a></li>
+						<li><a class="s-item" href="">Внедрение стандарта ISO 9001</a></li>
+						<li><a class="s-item" href="">Внедрение стандарта ISO 14000</a></li>
+						<li><a class="s-item" href="">Внедрение стандарта ISO 18000</a></li>
+						<li><a class="s-item" href="">Внедрение стандарта ISO 16001</a></li>
+						<li><a class="s-item" href="">Интегрированная система менеджмента</a></li>
+					</ul>
+				</div>
+				<div class="trinit-one">		
+					<ul class="service">
+						<li><a class="s-item active" href="">Лицензирование</a></li>
+						<li><a class="s-item" href="">Лицензии Ростехнадзора</a></li>
+						<li><a class="s-item" href="">Лицензии Росприроднадзора</a></li>
+						<li><a class="s-item" href="">Лицензии ФСБ</a></li>
+						<li><a class="s-item" href="">Лицензии МЧС</a></li>
+						<li><a class="s-item" href="">Лицензии Минтранса (железнодорожные лицензии)</a></li>
+						<li><a class="s-item" href="">Лицензии Росохранкультуры (лицензия на&nbsp;реставрацию)</a></li>
+						<li><a class="s-item" href="">Лицензии департамента на&nbsp;черные и&nbsp;цветные металлы</a></li>
+						<li><a class="s-item" href=""></a></li>
+						
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">Регистрация изменений</a></li>
+						<li><a class="s-item" href="">Смена наименования организации</a></li>
+						<li><a class="s-item" href="">Смена юридического адреса</a></li>
+						<li><a class="s-item" href="">Смена участников (Акционеров)</a></li>
+						<li><a class="s-item" href="">Увеличение/уменьшения уставного капитала</a></li>
+						<li><a class="s-item" href="">Изменение кодов ОКВЭД</a></li>
+						<li><a class="s-item" href="">Смена генерального директора</a></li>
+						<li><a class="s-item" href="">Смена учредителей</a></li>
+					</ul>	
+				</div>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active" href="">Сопровождение сделок по&nbsp;купле продаже бизнеса</a></li>
+						<li><a class="s-item" href="">Предпродажный аудит бизнеса</a></li>
+						<li><a class="s-item" href="">Сопровожение сделок по&nbsp;купле-продажи бизнеса</a></li>
+						<li><a class="s-item" href="">Продажа готовых фирм с&nbsp;лицензиями</a></li>
+						<li><a class="s-item" href="">Продажа готовых фирм с&nbsp;допусками СРО</a></li>
+						<li><a class="s-item" href=""></a></li>
+						<li><a class="s-item" href=""></a></li>
+						<li><a class="s-item" href=""></a></li>
+					<ul class="service">
+						<li><a class="s-item active" href="">Регистрация юридических лиц</a></li>
+						<li><a class="s-item" href="">Регистрация НП</a></li>
+						<li><a class="s-item" href="">Регистрация ООО</a></li>
+						<li><a class="s-item" href="">Регистрация ОАО</a></li>
+						<li><a class="s-item" href="">Регистрация ЗАО</a></li>
+						<li><a class="s-item" href="">Регистрация ИП</a></li>
+					</ul>	
+				</div>
+			
+			<div class="summ">
+				<h3>Протос Консалтинг в цифрах</h3>
+				<p>С 2003 года: <span class="bn">785</span> клиентов из <span class="bn">74</span> регионов России</p>
+
+			</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="for-bg sect" name="prEksprt" id="prEksprt">	
+		<div class="b-sec qin year-6">
+			<div class="b-sec-main">
+				<h1 class="title-entry">ПРОТОС ЭКСПЕРТИЗА</h1>	
+				<span class="date-open">ОСНОВАН 25 ФЕВРАЛЯ 2003</span>
+
+				<div class="qoutes">
+					<p>Помогаем решать простые и&nbsp;комплексные задачи в&nbsp;области стоительства, проектирования. У&nbsp;нас большой опыт. Всерьез и&nbsp;надолго!</p>
+				</div>
+				<div class="title-item">
+					<img src="images/face.gif" alt="avatar" class="av" />
+					<span class="name">Дмитрий Станиславович Алексеев</span>
+					<span class="post">Генеральный директор и&nbsp;основатель Протос Консалтинг</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered">
+			<div class="info-block">
+				<h3>История</h3>
+				<p>Компания &laquo;Протос Экспертиза&raquo; появилась на&nbsp;рынке юридического консультирования и&nbsp;экспертизы промышленной безопасности в&nbsp;2003&nbsp;году.</p>
+				<p>За&nbsp;пять лет успешной работы нашими клиентами стали производители высокотехнологичного оборудования, используемого на&nbsp;опасных производственных объектах, организации, эксплуатирующие опасные производственные объекты, и&nbsp;организации, осуществляющие экспертизу промышленной безопасности. Со&nbsp;многими мы&nbsp;построили долгосрочные партнерские отношения.</p>
+				<a class="official" href="">Посетить официальный сайт компании Протос Экспертиза</a>
+			</div>
+			<div class="trinity">
+				<h3>Услуги</h3>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active " href="">Экологическая безопасность</a></li>
+						<li><a class="s-item" href="">Экологический аудит</a></li>
+						<li><a class="s-item" href="">Разработка проектов ОВОС</a></li>
+						<li><a class="s-item" href="">Разработка ПНООЛР</a></li>
+						<li><a class="s-item" href="">Разработка НДС</a></li>
+						<li><a class="s-item" href="">Разработка ПДВ</a></li>
+						<li><a class="s-item" href="">Разработка СЗЗ</a></li>
+						<li><a class="s-item" href="">Оформление паспортов на&nbsp;отходы</a></li>
+						<li><a class="s-item" href="">Экологическая сертификация</a></li>
+						<li><a class="s-item" href="">Лицензии на&nbsp;обращение отходов <nobr>I-IV</nobr> класса опасности</a></li>
+						
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">Разработка эксплуатационной документации ОПО</a></li>
+						<li><a class="s-item" href="">Разработка ПЛАС</a></li>
+						<li><a class="s-item" href="">Разработка ПЛАРН</a></li>
+						<li><a class="s-item" href="">Разработка ПЛА</a></li>
+						<li><a class="s-item" href="">Разработка ППР</a></li>
+						<li><a class="s-item" href="">Разработка паспортов на ёмкостное оборудование работающие под&nbsp;давлением</a></li>
+						<li><a class="s-item" href="">Разработка должностных инструкций необходимыхдля эксплуатации ОПО</a></li>
+					</ul>	
+						
+					<ul class="service">
+						<li><a class="s-item active" href="">Разработка документация необходимаядля эксплуатации технических устройств используемых на&nbsp;ОПО</a></li>
+						<li><a class="s-item" href="">Разрешение на&nbsp;применение</a></li>
+						<li><a class="s-item" href="">Разработка ТУ (технических условий)</a></li>
+						<li><a class="s-item" href="">Разработка паспорта на&nbsp;эксплуатацию технического устройства</a></li>
+						<li><a class="s-item" href="">Разработка паспортов на&nbsp;ёмкостное оборудование работающие под давлением</a></li>
+						<li><a class="s-item" href="">Разработка должностных инструкций необходимых для&nbsp;эксплуатации ОПО</a></li>
+						<li><a class="s-item" href="">Сертификация оборудования</a></li>
+						<li><a class="s-item" href="">Разработка паспортов на&nbsp;технические трубопроводы</a></li>
+						
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">Обследование, техническое диагностирование лифтов</a></li>
+						<li><a class="s-item" href="">Обследование лифтов</a></li>
+						<li><a class="s-item" href="">Техническое диагностирование</a></li>
+						<li><a class="s-item" href="">Электроизмерительные работы</a></li>
+						
+					</ul>	
+				</div>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active" href="">Промышленная безопасность</a></li>
+						<li><a class="s-item" href="">Экспертиза промышленной безопасности зданий и&nbsp;сооружений</a></li>
+						<li><a class="s-item" href="">Экспертиза промышленной безопасности технических устройств применяемых на&nbsp;ОПО</a></li>
+						<li><a class="s-item" href="">Экспертиза промышленной безопасности проектной документации</a></li>
+						<li><a class="s-item" href="">Экспертиза промышленной безопасности иной документации</a></li>
+						<li><a class="s-item" href="">Экспертиза промышленной безопасности декларации промышленной безопасности</a></li>
+						
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">Ликвидация ОПО</a></li>
+						<li><a class="s-item" href="">Разработка проектной документации на&nbsp;ликвидацию ОПО</a></li>
+						<li><a class="s-item" href="">Экспертиза ПБ проектной документации на&nbsp;ликвидацию ОПО</a></li>
+						<li><a class="s-item" href="">Разработка ППР</a></li>
+						<li><a class="s-item" href="">Экспертиза ПБ ППР</a></li>
+						<li><a class="s-item" href="">Демонтажные работы в&nbsp;рамках ликвидации ОПО</a></li>
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">Консервация ОПО</a></li>
+						<li><a class="s-item" href="">Разработка проектной документации на консервацию ОПО</a></li>
+						<li><a class="s-item" href="">Экспертиза ПБ проектной документации на&nbsp;консервацию ОПО</a></li>
+
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">Техническое перевооружение ОПО</a></li>
+						<li><a class="s-item" href="">Разработка проектной документации на&nbsp;техническое перевооружение ОПО</a></li>
+						<li><a class="s-item" href="">Экспертиза ПБ проектной документации на&nbsp;техническое перевооружение ОПО</a></li>
+						
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">Аттестация испытательных лабораторий, лабораторий НК и&nbsp;РК</a></li>
+						<li><a class="s-item" href="">Акредитация испытательной лаборатории</a></li>
+						<li><a class="s-item" href="">Акредитация лаборатории неразрушающего контроля</a></li>
+						<li><a class="s-item" href="">Акредитация лаборатории разрушающего контроля</a></li>
+						<li><a class="s-item" href="">Акредитация экологической лаборатории</a></li>
+						<li><a class="s-item" href="">Акредитация электротехнической лаборатории</a></li>
+					</ul>	
+				</div>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active" href="">Обследование зданий и&nbsp;сооружений, техническое диагностирование</a></li>
+						<li><a class="s-item" href="">Объектов угольной промышленности</a></li>
+						<li><a class="s-item" href="">Объектов горнорудной промышленности</a></li>
+						<li><a class="s-item" href="">Оборудования нефтяной и&nbsp;газовой промышленности</a></li>
+						<li><a class="s-item" href="">Технических устройств химических, нефтехимических, нефтегазоперерабатывающих производств и других взрывопожароопасных и&nbsp;химически опасных производств</a></li>
+						<li><a class="s-item" href="">Оборудования, работающее под давление более 0,07&nbsp;МПа или с&nbsp;температурой нагрева воды свыше 115&deg;С</a></li>
+						<li><a class="s-item" href="">Подъемных сооружений</a></li>
+						<li><a class="s-item" href="">Систем газоснабжения (газораспределения)</a></li>
+						<li><a class="s-item" href="">Оборудования металлургической промышленности</a></li>
+						<li><a class="s-item" href="">Объектов железнодорожного транспорта</a></li>
+						<li><a class="s-item" href="">Объектов по&deg;хранению и&deg;переработке зерна</a></li>
+						
+					</ul>	
+					</ul>	
+					<ul class="service">
+						<li><a class="s-item active" href="">Лаборатории</a></li>
+						<li><a class="s-item" href="">Экологическая лаборатория</a></li>
+						<li><a class="s-item" href="">Испытательная лаборатория</a></li>
+						<li><a class="s-item" href="">Электротехническая лаборатория</a></li>
+						<li><a class="s-item" href="">Лаборатория неразрушающего контроля</a></li>
+					</ul>	
+					
+				</div>
+		
+				<div class="summ">
+					<h3>Протос Экспертиза в цифрах</h3>
+					<p>С 2006 года: <a href=""><span class="bn">525</span></a> клиентов из <span class="bn">70</span> регионов России</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="for-bg sect strahov" name="prStrahov" id="prStrahov">	
+		<div class="b-sec qin year-6">
+			<div class="b-sec-main">
+				<h1 class="title-entry">ПРОТОС СТРАХОВАНИЕ</h1>	
+				<span class="date-open">ОСНОВАНО 25 ФЕВРАЛЯ 2006</span>
+
+				<div class="qoutes">
+					<p>Помогаем решать простые и&nbsp;комплексные задачи в&nbsp;области стоительства, проектирования. У&nbsp;нас большой опыт. Всерьез и&nbsp;надолго!</p>
+				</div>
+				<div class="title-item">
+					<img src="images/face.gif" alt="avatar" class="av" />
+					<span class="name">Дмитрий Станиславович Алексеев</span>
+					<span class="post">Генеральный директор и&nbsp;основатель Протос Консалтинг</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered">
+			<div class="info-block">
+				<h3>История</h3>
+				<div class="gall">
+					<img src="images/gallery/gal1.png" class="galimg"/>
+					<img src="images/gallery/gal2.png" class="galimg"/>
+					<img src="images/gallery/gal3.png" class="galimg"/>
+					<img src="images/gallery/gal4.png" class="galimg"/>
+					<img src="images/gallery/gal5.png" class="galimg"/>
+				</div>
+				<p>Группа компаний Протос была основана в&nbsp;2003 году выпускниками Российского Химико- Технологического Университета им&nbsp;Д.И. Менделеева, специалистами в&nbsp;химической и&nbsp;нефтегазовой промышленности. За&nbsp;недолгий срок мы&nbsp;стали несомненными лидерами на&nbsp;рынке консалтинговых услуг и&nbsp;вошли в&nbsp;пятерку самых уважаемых экспертных организаций России.</p>
+				
+			</div>
+			<div class="trinity">
+				<div class="struslugi">
+					<h3>Услуги</h3>
+					<div class="trinit-one">
+						<ul class="service">
+							<li><a class="s-item active " href="">Страхование юридических лиц</a></li>
+							<li><a class="s-item" href="">Страхование СРО</a></li>
+							<li><a class="s-item" href="">Страхование ОПО (опасных промышленных объектов)</a></li>
+							<li><a class="s-item" href="">Страхование грузов</a></li>
+							<li><a class="s-item" href="">Страхование автотранспорта (КАСКО, ОСАГО)</a></li>
+							<li><a class="s-item" href="">Страхование строительно-монтажных рисков</a></li>
+							<li><a class="s-item" href="">Страхование лизинга</a></li>
+							<li><a class="s-item" href="">Страхование медицинское</a></li>	
+						</ul>	
+						<a class="official" href="">Посетить официальный сайт компании Протос Страхование</a>	
+					</div>
+				</div>
+				
+				<div class="partners">
+					<h3>Партнеры</h3>
+					<ul class="strah-partn">
+						<li><a href="#"><img src="images/partners/1.gif" alt="ИНГОССТРАХ" /></a></li>
+						<li><a href="#"><img src="images/partners/2.gif" alt="АЛЬФА СТРАХОВАНИЕ" class="s" /></a></li>
+						<li><a href="#"><img src="images/partners/3.gif" alt="РОСГОССТРАХ" /></a></li>
+						<li><a href="#"><img src="images/partners/4.gif" alt="РСК" class="rsk"/></a></li>
+						<li><a href="#"><img src="images/partners/5.gif" alt="СОГЛАСИЕ" /></a></li>
+						<li><a href="#"><img src="images/partners/6.gif" alt="РОСНО" /></a></li>
+					</ul>
+				</div>
+				<div class="summ">
+					<h3>Протос Страхование в цифрах</h3>
+					<p>Мы застраховали клиентов на <span class="bnl">5 785</span>  млн. рублей</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="for-bg nadzor" name="prNadzor" id="prNadzor">	
+		<div class="b-sec qin">
+			<div class="b-sec-main">
+				<h1 class="title-entry">НАДЗОР-ИНФО</h1>	
+				<span class="date-open">ОСНОВАН 25 ФЕВРАЛЯ 2007</span>
+			</div>
+			<div class="forseven">
+				<img src="images/year7.png" alt="protos nadzor" />
+			</div>
+
+				<div class="numbcomm" id="count-comm">
+					<div class="block-comm">
+						<span class="bcol">22&nbsp;000</span>&nbsp;УЧАСТНИКОВ ОСТАВИЛИ <span class="wr-com"> <span class="bcom" id="comments_number_a">1</span><span class="bcom left-c" id="comments_number_b"></span></span> КОММЕНТАРИЕВ В <span class="bcom">7 500</span> ТЕМАХ
+					</div>
+				</div>
+		</div>
+
+		<div class="centered">
+			<div class="info-block">
+				<h3>О проекте</h3>
+				<p>&laquo;Надзор-Инфо&raquo;&nbsp;&mdash; информационно- аналитический ресурс об&nbsp;отраслях промышленности: металлургической, атомной, химической, нефтегазовой, строительной и&nbsp;др. Это деловое сообщество экспертов, которые задают вопросы и&nbsp;получают консультации о&nbsp;документации, оборудования, лицензий, обсуждают последние новости промышленности, строят на&nbsp;ресурсе деловые отношения, находя среди пользователей новых партнеров.</p>
+				
+			</div>
+			<div class="trinity">
+				<h3>Основные обсуждаемые темы</h3>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item" href="">Выставки</a></li>
+						<li><a class="s-item" href="">Конcференции</a></li>
+						<li><a class="s-item" href="">СРО</a></li>
+						<li><a class="s-item" href="">Проектирование</a></li>
+						<li><a class="s-item" href="">Изыскание</a></li>
+						<li><a class="s-item" href="">Строительcтво</a></li>
+						<li><a class="s-item" href="">Строительcтво</a></li>
+						<li><a class="s-item" href="">Машиностроение</a></li>
+						<li><a class="s-item" href="">Экология</a></li>
+						<li><a class="s-item" href="">Эксплуатация зданий и&nbsp;сооружений</a></li>
+						<li><a class="s-item" href="">Эксплуатация опасных производственных объектов (ОПО)</a></li>
+						<li><a class="s-item" href="">Атомная энергетика</a></li>
+						<li><a class="s-item" href=""></a></li>
+					</ul>	
+				</div>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item" href="">Электроэнергетика</a></li>
+						<li><a class="s-item" href="">Нефтяная и&nbsp;газовая промышленность</a></li>
+						<li><a class="s-item" href="">Химия</a></li>
+						<li><a class="s-item" href="">Металлургия и горное дело</a></li>
+						<li><a class="s-item" href="">Страхование</a></li>
+						<li><a class="s-item" href="">Промышленная безопасность</a></li>
+						<li><a class="s-item" href="">Охрана труда</a></li>
+						<li><a class="s-item" href="">Ростехнадзор</a></li>
+						<li><a class="s-item" href="">Росприродадзор</a></li>
+						<li><a class="s-item" href="">Роспотребнадзор</a></li>
+						<li><a class="s-item" href="">МЧС</a></li>
+						<li><a class="s-item" href="">Росакредитация</a></li>
+					</ul>	
+					
+				</div>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item" href="">Лицензирование, разрешения на&nbsp;применение, сертификация</a></li>
+						<li><a class="s-item" href="">Сертификация</a></li>
+						<li><a class="s-item" href="">Испытательные лаборатории</a></li>
+						<li><a class="s-item" href="">Неразрушающий контроль</a></li>
+						<li><a class="s-item" href="">Поиск работы</a></li>
+						<li><a class="s-item" href="">Новости</a></li>
+						<li><a class="s-item" href="">Коррупция</a></li>
+						<li><a class="s-item" href="">Законы и&nbsp;постановления</a></li>
+						<li><a class="s-item" href="">РД, ПБ, ГОСТы, СНИПЫ</a></li>
+					</ul>	
+					
+				</div>
+		
+
+			</div>
+		</div>
+	</div>
+	<div class="for-bg sect" name="prIpk" id="prIpk">	
+		<div class="b-sec qin year-8">
+			<div class="b-sec-main">
+				<h1 class="title-entry">УЧЕБНЫЙ ЦЕНТР ИПК «ПРОМБЕЗОПАСНОСТЬ»</h1>	
+				<span class="date-open">ОСНОВАНО 25 ФЕВРАЛЯ 2006</span>
+
+				<div class="qoutes">
+					<p>Помогаем решать простые и комплексные задачи в&nbsp;области стоительства, проектирования. У&nbsp;нас большой опыт. Всерьез и&nbsp;надолго!</p>
+				</div>
+				<div class="title-item">
+					<img src="images/face.gif" alt="avatar" class="av" />
+					<span class="name">Дмитрий Станиславович Алексеев</span>
+					<span class="post">Генеральный директор и&nbsp;основатель Протос Консалтинг</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered">
+			<div class="info-block">
+				<h3>История</h3>
+				<div class="gall">
+					<img src="images/gallery/gal1.png" class="galimg"/>
+					<img src="images/gallery/gal2.png" class="galimg"/>
+					<img src="images/gallery/gal3.png" class="galimg"/>
+					<img src="images/gallery/gal4.png" class="galimg"/>
+					<img src="images/gallery/gal5.png" class="galimg"/>
+				</div>
+				<p>Группа компаний Протос была основана в&nbsp;2003 году выпускниками Российского Химико- Технологического Университета им&nbsp;Д.И. Менделеева, специалистами в&nbsp;химической и&nbsp;нефтегазовой промышленности. За&nbsp;недолгий срок мы&nbsp;стали несомненными лидерами на&nbsp;рынке консалтинговых услуг и&nbsp;вошли в&nbsp;пятерку самых уважаемых экспертных организаций России.</p>
+				
+			</div>
+			<div class="trinity">
+				<h3>Услуги</h3>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active " href="">Повышение квалификации специалистов</a></li>
+						<li><a class="s-item" href="">Строителей</a></li>
+						<li><a class="s-item" href="">Проектировщиков</a></li>
+						<li><a class="s-item" href="">Изыскателей</a></li>
+						<li><a class="s-item" href="">Энергоаудиторов</a></li>
+						<li><a class="s-item" href="">Специалистов в&nbsp;области пожарной безопасности</a></li>
+						<li><a class="s-item" href="">Специалистов в&nbsp;области экологической безопасности</a></li>
+						<li><a class="s-item" href="">Специалистов в&nbsp;области охраны труда</a></li>
+						
+					</ul>	
+				</div>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active" href="">Аттестация специалистов</a></li>
+						<li><a class="s-item" href="">Аттестация экспертов</a></li>
+						<li><a class="s-item" href="">Аттестация специалистов по&nbsp;НК</a></li>
+						<li><a class="s-item" href="">Аттестация специалистов в&nbsp;области электробезопасности <nobr>I-V</nobr> группа</a></li>
+						<li><a class="s-item" href="">Аттестация специалистов в&nbsp;области промышленной безопасности</a></li>
+						
+					</ul>	
+				</div>
+			
+				<div class="summ">
+					<h3>Учебный центр в цифрах</h3>
+					<p>В центре обучилось более <span class="bnl">1500</span> человек</p>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="for-bg sect" name="prCentr" id="prCentr">	
+		<div class="b-sec qin year-12">
+			<div class="b-sec-main">
+				<h1 class="title-entry">ЕВРАЗИЙСКИЙ ЦЕНТР СЕРТИФИКАЦИИ</h1>	
+				<span class="date-open">ОСНОВАНО 25 ФЕВРАЛЯ 2006</span>
+
+				<div class="qoutes">
+					<p>Помогаем решать простые и&nbsp;комплексные задачи в&nbsp;области стоительства, проектирования. У&nbsp;нас большой опыт. Всерьез и&nbsp;надолго!</p>
+				</div>
+				<div class="title-item">
+					<img src="images/face.gif" alt="avatar" class="av" />
+					<span class="name">Дмитрий Станиславович Алексеев</span>
+					<span class="post">Генеральный директор и&nbsp;основатель Протос Консалтинг</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered">
+			<div class="info-block">
+				<h3>История</h3>
+				<div class="gall">
+					<img src="images/gallery/gal1.png" class="galimg"/>
+					<img src="images/gallery/gal2.png" class="galimg"/>
+					<img src="images/gallery/gal3.png" class="galimg"/>
+					<img src="images/gallery/gal4.png" class="galimg"/>
+					<img src="images/gallery/gal5.png" class="galimg"/>
+				</div>
+
+				<p>Группа компаний Протос была основана в&nbsp;2003 году выпускниками Российского Химико- Технологического Университета им&nbsp;Д.И. Менделеева, специалистами в&nbsp;химической и&nbsp;нефтегазовой промышленности. За&nbsp;недолгий срок мы&nbsp;стали несомненными лидерами на&nbsp;рынке консалтинговых услуг и&nbsp;вошли в&nbsp;пятерку самых уважаемых экспертных организаций России.</p>
+				
+			</div>
+			<div class="trinity">
+				<h3>Услуги</h3>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active" href="">ISO</a></li>
+						<li><a class="s-item" href="">Внедрение стандарта ISO 9001</a></li>
+						<li><a class="s-item" href="">Внедрение стандарта ISO 14000</a></li>
+						<li><a class="s-item" href="">Внедрение стандарта ISO 18000</a></li>
+						<li><a class="s-item" href="">Внедрение стандарта ISO 16001</a></li>
+						<li><a class="s-item" href="">Интегрированная система менеджмента</a></li>
+					</ul>
+				</div>
+				<div class="trinit-one">
+					<ul class="service">
+						<li><a class="s-item active" href="">Сертификация продукции и&nbsp;оборудования</a></li>
+						<li><a class="s-item" href="">Обязательная сертификация ГОСТ Р</a></li>
+						<li><a class="s-item" href="">Сертификация взрывозащищенного оборудования</a></li>
+						<li><a class="s-item" href="">Сертификация по&nbsp;техническому регламенту</a></li>
+						<li><a class="s-item" href="">Добровольная сертификация</a></li>
+						<li><a class="s-item" href="">Декларирование соответствия</a></li>
+						<li><a class="s-item" href="">Отказное письмо</a></li>
+						<li><a class="s-item" href="">Сертификат происхождения товара</a></li>
+						
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="about">
+		<p class="bh">За&nbsp;9&nbsp;лет мы&nbsp;накопили огромный опыт. Мы&nbsp;готовы им&nbsp;делиться с&nbsp;клиентами и&nbsp;партнёрами. Впереди новые проекты.</p>
+		<span class="bs">ИСТОРИЯ ПРОДОЛЖАЕТСЯ, СЛЕДИТЕ ЗА СОБЫТИЯМИ!</span>
+	</div>
+	<div class="footer">
+		<span class="txt-copyright">Copyright &copy; 2003-2012 Протос Групп</span>
+		<div class="contact">
+			<p>123001, Россия, Москва</p>
+			<p>Вспольный пер., дом 21, стр 1-1А</p>
+			<p>Телефон: +7 (495) 228-03-82</p>
+			<p>E-mail: <a href="mailto:mail@protos-consalting.ru">mail@protos-consalting.ru</a></p>
+		</div>
+	</div>
+</body>
+</html>
