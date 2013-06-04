@@ -1,0 +1,785 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Presentation about JavaScript</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="themes/ribbon/styles/style.css">
+	
+	<style>
+		#Cover H2 {
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>My Presentation about JavaScript</h1>
+		<p>Vladislava Tikhomyrova</p>
+	</header>
+	<div class="slide bg" id="Cover"><div>
+		<section>
+			<header>
+				<h2>JS self study </h2>
+			</header>
+			<img src="pictures/cover.jpg" alt="">
+			
+		</section>
+	</div></div>
+	
+	<div class="slide" id="Header"><div>
+		<section>
+			<header>
+				<h2>Back in 1995</h2>
+			</header>
+			<div class="forimg"><img src="pictures/ns2.png" class="left" alt=""></div>
+			<div class="forul">
+				<p>Use:</p>
+				<ul>
+					<li>VBSCRIPT</li>
+				</ul>
+			</div>
+			<div class="forimg"><img src="pictures/ns3.png" class="right" alt="" style="width: 208px; height: 313px;"></div>
+			<div class="forul secondimg">	
+				<p>Use:</p>
+				<ul>
+					<li><span class="strike">Mocha</span></li>
+					<li><span class="strike">LiveScript</span></li>
+					<li>JAVAscript</li>
+					
+				</ul>
+			</div>
+		</section>
+	</div></div>
+	
+	<div class="slide" id="second"><div>
+		<section>
+			<header>
+				<h2>Javascript Today</h2>
+				<h4>Explosive Growth</h4>
+			</header>
+			<img src="pictures/fr2.png" alt="" class="middle">
+		</section>
+	</div></div>
+	
+	<div class="slide forul" id="why_jquery"><div>
+		<section>
+			<header>
+				<h2>Why jQUERY</h2>
+				<h4>An Abstraction Layer</h4>
+			</header>
+			<img src="pictures/jquery.gif" alt="" >
+			<ul>
+				<li>Write less, do more</li>
+			</ul>
+		</section>
+	</div></div>
+	
+	<div class="slide forul" id="why_jquery_1"><div>
+		<section>
+			<header>
+				<h2>Why jQUERY</h2>
+				<h4>An Abstraction Layer</h4>
+			</header>
+			<img src="pictures/jquery.gif" alt="" >
+			<ul>
+				<li>Write less, do more</li>
+			</ul>
+			<div class="codeblock">
+			<code> 
+			var a = document.getElementById("text");<br />
+			a.nodeValue = "some_text"; 	
+			</code>
+			</div>
+			<div class="numbchar js"><p>61 characters</p> on Javascript</div>
+		</section>
+	</div></div>
+	
+	<div class="slide forul" id="why_jquery_2"><div>
+		<section>
+			<header>
+				<h2>Why jQUERY</h2>
+				<h4>An Abstraction Layer</h4>
+			</header>
+			<img src="pictures/jquery.gif" alt="" >
+			<ul>
+				<li>Write less, do more</li>
+			</ul>
+			<div class="codeblock">
+			<code> 
+			var a = document.getElementById("text");<br />
+			a.nodeValue = "some_text"; 	
+			</code>
+			</div>
+			<div class="numbchar js"><p>61 characters</p> on Javascript</div>
+			<div class="codeblock">
+			<code> 
+			$('#text').text(some_text);			
+			</code>
+			</div>
+			<div class="numbchar jq"><p>27 characters</p> on JQuery</div>
+		</section>
+	</div></div>
+	
+	<div class="slide forul" id="why_jquery_3"><div>
+		<section>
+			<header>
+				<h2>Why jQUERY</h2>
+				<h4>An Abstraction Layer</h4>
+			</header>
+			<img src="pictures/jquery.gif" alt="" >
+			<ul>
+				<li>Write less, do more</li>
+				<li>Cross-browser compatibility
+					<h4 class="suport">jQuery actively supports these browsers:</h4>
+					<ul class="instul">
+						<li><a href="http://www.google.com/chrome/" target="_blank">Chrome Current - 1 version</a></li>
+						<li><a href="http://www.mozilla.com/en-US/firefox/" target="_blank">Firefox 3.6, 5.0.x, 6.0.x</a></li>
+						<li><a href="http://www.opera.com/browser/" target="_blank">Opera Current - 1 version</a></li>
+						<li><a href="http://www.apple.com/safari/" target="_blank">Safari 5.0.x</a></li>
+						<li><a href="http://www.microsoft.com/windows/products/winfamily/ie/" target="_blank">Internet Explorer 6+</a></li>
+					</ul>
+				
+				</li>
+			</ul>
+		</section>
+	</div></div>
+	
+	<div class="slide forul" id="why_jquery_3_1"><div>
+		<section>
+			<header>
+				<h2>Why jQUERY</h2>
+				<h4>An Abstraction Layer</h4>
+			</header>
+			<img src="pictures/jquery.gif" alt="" >
+			<ul>
+				<li>Write less, do more</li>
+				<li>Cross-browser compatibility
+					<h4 class="suport">jQuery actively supports these browsers:</h4>
+					<ul class="instul">
+						<li><a href="http://www.google.com/chrome/" target="_blank">Chrome Current - 1 version</a></li>
+						<li><a href="http://www.mozilla.com/en-US/firefox/" target="_blank">Firefox 3.6, 5.0.x, 6.0.x</a></li>
+						<li><a href="http://www.opera.com/browser/" target="_blank">Opera Current - 1 version</a></li>
+						<li><a href="http://www.apple.com/safari/" target="_blank">Safari 5.0.x</a></li>
+						<li><a href="http://www.microsoft.com/windows/products/winfamily/ie/" target="_blank">Internet Explorer 6+</a></li>
+					</ul>
+				
+				</li>
+			</ul>
+			<div class="js" style="top: 57%;"><img src="pictures/222.png" style="width: 420px;" ></div>
+		</section>
+	</div></div>
+	
+	<div class="slide forul" id="why_jquery_4"><div>
+		<section>
+			<header>
+				<h2>Why jQUERY</h2>
+				<h4>An Abstraction Layer</h4>
+			</header>
+			<img src="pictures/jquery.gif" alt="" >
+			<ul>
+				<li>Write less, do more</li>
+				<li>Cross-browser compatibility</li>
+				<li>Work with DOM</li>
+					<h4 class="suport">Manipulation of elements of DOM</h4>
+					<ul class="instul">
+					<li>DOM Insertion, Around</li>
+					<li>DOM Insertion, Inside</li>
+					<li>DOM Insertion, Outside</li>
+					<li>DOM Removal</li>
+					<li>DOM Replacement</li>
+					</ul>
+			</ul>
+		</section>
+	</div></div>
+	
+	<div class="slide forul" id="why_jquery_5"><div>
+		<section>
+			<header>
+				<h2>Why jQUERY</h2>
+				<h4>An Abstraction Layer</h4>
+			</header>
+			<img src="pictures/jquery.gif" alt="" >
+			<ul>
+				<li>Write less, do more</li>
+				<li>Cross-browser compatibility</li>
+				<li>Work with DOM</li>
+				<li>Events</li>
+				<li>Ajax</li>
+			</ul>
+		</section>
+	</div></div>
+	
+	<div class="slide forul" id="But"><div>
+		<section>
+			<header>
+				<h2>jQUERY IS NOT PERFECT</h2>
+			</header>
+			<p class="cry">In some case jQuery is heavy & slow, so you still need JavaScript!</p>
+			<img src="pictures/xoxo.png" style="height: 350px; width: 435px; margin: 0 auto; float: left;">
+			<div class="refer">
+			<h4>Must read</h4>
+				<ul>
+					<li><a href="https://developer.mozilla.org/en/JavaScript/Reference" target="_blank">developer.mozilla.org/JavaScript</a></li>
+					<li><a href="http://javascript.ru/" target=_blank>javascript.ru</a></li>
+					
+				</ul>
+			</div>
+		</section>
+	</div></div>
+	
+	<div class="slide" id="DOM"><div>
+		<section>
+			<header>
+				<h2>DOM</h2>
+			</header>
+			<code>html</code>
+			<div class="refact">
+				<code>head</code> 
+					<div class="refact"><code>title</code></div>
+				<code>body</code>
+					<div class="refact">
+						<code>h1</code><br />
+						<code>span#first</code><br />
+						<code>span.second</code><br />
+					</div>
+			</div>
+		</section>
+	</div></div>
+	
+	<div class="slide" id="DOM1"><div>
+		<section>
+			<header>
+				<h2>DOM</h2>
+			</header>
+			<code>html</code>
+			<div class="refact">
+				<code>head</code> 
+					<div class="refact"><code>title</code></div>
+				<code>body</code>
+					<div class="refact">
+						<code>h1</code><br />
+						<code>span#first</code><br />
+						<code>span.second</code><br />
+					</div>
+			</div>
+			<div class="js">
+				<span>&rarr; DOM nodes are objects in terms of javascript.</span>
+				
+			</div>
+		</section>
+	</div></div>
+	
+	<div class="slide" id="DOM2"><div>
+		<section>
+			<header>
+				<h2>DOM</h2>
+			</header>
+			<code>html</code>
+			<div class="refact">
+				<code>head</code> 
+					<div class="refact"><code>title</code> &rarr; <span class="codes">Planner Support</span></div>
+				<code>body</code>
+					<div class="refact">
+						<code>h1</code> &rarr; <span class="codes">History of changes</span><br />
+						<code>span#first</code> &rarr; <span class="codes">Planner Version: 5.5.0.04, Is Outdated:</span><br />
+						<code>span.second</code>&rarr; <span class="codes">checked, Author</span><br />
+					</div>
+			</div>
+		</section>
+	</div></div>
+	
+	<div class="slide" id="select"><div>
+		<section>
+			<header>
+				<h2>jQuery Selection</h2>
+			</header>
+			<div class="m_box">
+				<select id="select_t">
+					<option>$('span#first')</option>
+					<option>$('span.second')</option>
+				</select>
+				<input type="submit" id="subm" value="select" />
+			</div> <span style="clear: both;"></span>
+			<code>html</code>
+			<div class="refact">
+				<code>head</code> 
+					<div class="refact"><code>title</code> &rarr; <span class="codes">Planner Support</span></div>
+				<code>body</code>
+					<div class="refact">
+						<code>h1</code> &rarr; <span class="codes">History of changes</span><br />
+						<code>span#first</code> &rarr; <span id="first" class="codes">Planner Version: 5.5.0.04, Is Outdated:</span><br />
+						<code>span.second</code>&rarr; <span class="second">checked, Author</span><br />
+					</div>
+			</div>
+		</section>
+	</div></div>
+	
+	<div class="slide" id="ui_1"><div>
+		<section>
+			<header>
+				<h2>jQuery UI</h2>
+			</header>
+			<p>What you need to know about</p>
+			<img src="pictures/jqueryui.jpg" >
+		</section>
+	</div></div>
+	
+	<div class="slide" id="InTheMiddle"><div>
+		<section>
+			<img src="pictures/ui.png" class="middle" style="height: 640px;" >
+		</section>
+	</div></div>
+	
+	<div class="slide bg" id="ff"><div>
+		<section>
+			<header style="margin-left: 280px;">
+			<h2>We use JQuery UI in Synthes</h2>
+			<h3>when DevExpress  library fully replaced with jQuery UI</h3>
+			</header>
+			
+			<img src="pictures/res.png" alt="" style="width: 1024px; height: 640px;">
+		</section>
+	</div></div>
+	<div class="slide bg" id="Picture2"><div>
+		<section>
+			
+			<img src="pictures/old_dd.png" alt="">
+			<!-- © Patrick H. Lauke, http://www.flickr.com/photos/redux/ -->
+		</section>
+	</div></div>
+	
+	<div class="slide bg" id="Picture3"><div>
+		<section>
+			<img src="pictures/screen2.png" alt="">
+			<!-- © Patrick H. Lauke, http://www.flickr.com/photos/redux/ -->
+		</section>
+	</div></div>
+	<div class="slide" id="Picture4"><div>
+		<section>
+			<img src="pictures/synthes.png" alt="" style="height: 430px;">
+			<!-- © Patrick H. Lauke, http://www.flickr.com/photos/redux/ -->
+		</section>
+	</div></div>
+	
+	
+	
+	<div class="slide wonder" id="wonderful"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<ol>
+				<li><strong>weakly typed language</strong>: we can declare elements of different values ​</li>
+			</ol>	
+			<span>We can <span class="txt-dec ">declare</span>: 
+				<code>var i;</code><br />
+			<span>Or we can <span class="txt-dec ">declare and initialize</span>: 
+				<code>var i = 42;</code><br />
+		</section>
+	</div></div>
+	
+	<div class="slide wonder" id="wonderful_1"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<ol>
+				<li><b>weakly typed language</b>: we can declare elements of different values ​​and manipulate them without considering their types</li>
+			</ol>	
+				<code>var i = 42;</code><br />
+				<code>var name = "Anna Karenina";</code><br />
+				<code>var right = true;</code><br />
+		</section>
+	</div></div>
+	
+	<div class="slide wonder" id="wonderful_1_1"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<ol>
+				<li><b>weakly typed language</b>: we can declare elements of different values ​​and manipulate them without considering their types</li>
+			</ol>	
+				<code>var name = "Anna Karenina";</code><br />
+				<code>var right = true;</code><br />
+				<br />
+				<code>mixed =  right + " " + name;</code> 
+				<span id="subm">//mixed = "true Anna Karenina"</span>
+		</section>
+	</div></div>
+	
+	<div class="slide wonder" id="wonderful_1_2"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<ol>
+				<li><b>weakly typed language</b>: we can declare elements of different values ​​and manipulate them without considering their types</li>
+				<span style="font-size: 18px;">In this case, the interpreter executes independently casts and performs the specified operation.</span>
+			</ol>	
+				<code>var name = "Anna Karenina";</code><br />
+				<code>var right = true;</code> <span id="subm">// All logical operands are given a numeric type: true = 1 and false = 0</span><br />
+				<br />
+				<code>mixed =  i + right;</code> 
+				<span id="subm">// mixed = "421"</span>
+		</section>
+	</div></div>
+	
+	<div class="slide wonder" id="wonderful_2"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<ol>
+				<li style="line-height: 35px;">
+				<code>if (condition)</code><br />
+					<code>statement1 </code><br />
+				<code>[else</code><br />
+					<code>statement2]</code>
+				</li>
+			</ol>	
+			<span>In <code>condition</code> we can use variables all types not only boolean.</span>
+			<p>The values <code>true</code> and <code>false</code> are booleans.</p>
+			
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_2_1"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<ol>
+				<li style="line-height: 35px;">
+				<code>if (condition)</code><br />
+					<code>statement1 </code><br />
+				<code>[else</code><br />
+					<code>statement2]</code>
+				</li>
+			</ol>	
+			<span>JavaScript has another similar two values: <code>truthy</code> and <code>falsy</code></span>
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_2_2"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<ol>
+				<li style="line-height: 35px;">
+				<code>if (condition)</code><br />
+					<code>statement1 </code><br />
+				<code>[else</code><br />
+					<code>statement2]</code>
+				</li>
+			</ol>	
+			<p style="margin-bottom: 14px;">JavaScript has another similar two values: <code>truthy</code> and <code>falsy</code></p>
+			<p>They are use to determine the result of a conditional expression. They are what we use to determine its result, they are <code>not the result</code>.</p>
+		</section>
+	</div></div>
+	<div class="slide wonder forul" id="wonderful_2_3"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<h3 style="padding-top: 0px;">Here is what is falsy in JavaScript:</h3>
+			<ul class="spisok">
+				<li>false</li>
+				<li>null</li>
+				<li>undefined</li>
+				<li>The empty string</li>
+				<li>The number 0</li>
+				<li>The number NaN</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_2_4"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<p><code>Everything else is truthy</code>, and that includes Infinity (which is another special number, like NaN), and all Object objects and Array objects, empty or not.</p>
+			
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_2_5"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<p style="margin-bottom: 0px;">Example: <a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_form_validation" target="_blank" style="margin-left: 460px">click to watch</a></p>
+			<div class="smallcode">
+			<code>function validateForm()</code><br />
+			<code>{</code><br />
+			<code>var x=document.forms["myForm"]["fname"].value;</code><br />
+			<code>if (x==null || x=="")</code><br />
+				&nbsp;&nbsp;&nbsp;<code>{</code><br />
+				&nbsp;&nbsp;&nbsp;<code>alert("First name must be filled out");</code><br />
+				&nbsp;&nbsp;&nbsp;<code>return false;</code><br />
+				&nbsp;&nbsp;&nbsp;<code>}</code><br />
+			<code>}</code>
+			</div>
+			
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_2_6"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			<img src="pictures/examp.png" alt="" style="height: 400px;" />
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_3"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+			</header>
+			
+			<ul>
+				<li>type of (array) is object (!)</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_3_1"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+			</header>
+			<ul style="margin-bottom: 0px;">
+				<li>type of (array) is object (!)</li>
+			</ul>
+			<img src="pictures/array.png" alt="" style="height: 400px; margin-left: 100px;" />
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_4"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			
+			<ul>
+				<li>Function can have any(!) number of parametrs</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide wonder funk" id="wonderful_4_1"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			
+			<ul style="margin-bottom: 0px;">
+				<li>Function can have any(!) number of parametrs</li>
+			</ul>
+			<div class="smallcode">
+			<code>var run = function(distance, speed) {</code><br />
+			&nbsp;&nbsp;&nbsp;<code>speed = speed || 10;</code><br />
+			&nbsp;&nbsp;&nbsp;<code>var time = distance / speed;</code><br />
+			&nbsp;&nbsp;&nbsp;<code>return time;</code><br />
+			<code>}</code>
+			</div>
+		</section>
+	</div></div>
+	<div class="slide wonder funk" id="wonderful_4_2"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			
+			<ul style="margin-bottom: 0px;">
+				<li>Function can have any(!) number of parametrs</li>
+			</ul>
+			<div class="smallcode">
+			<code>var run = function(distance, speed) {</code><br />
+			&nbsp;&nbsp;&nbsp;<code>speed = speed || 10;</code><br />
+			&nbsp;&nbsp;&nbsp;<code>var time = distance / speed;</code><br />
+			&nbsp;&nbsp;&nbsp;<code>return time;</code><br />
+			<code>}</code>
+			</div>
+			<span>run (10);</span> <span id="subm">return &rarr; 1</span><br />
+			<span>run (10,2);</span> <span id="subm">return &rarr; 5</span>
+		</section>
+	</div></div>
+	<div class="slide wonder funk" id="wonderful_4_3"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			
+			<ul style="margin-bottom: 0px;">
+				<li>Function can have any(!) number of parametrs</li>
+			</ul>
+			<div class="smallcode">
+			<code>var run = function(distance, speed) {</code><br />
+			&nbsp;&nbsp;&nbsp;<code>speed = speed || 10;</code><br />
+			&nbsp;&nbsp;&nbsp;<code>var time = distance / speed;</code><br />
+			&nbsp;&nbsp;&nbsp;<code>return time;</code><br />
+			<code>}</code>
+			</div>
+			<span>run (10,2,4,5,6);</span> <br />
+			<span>run ( );</span>
+		</section>
+	</div></div>
+	<div class="slide wonder funk" id="wonderful_4_4"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			
+			<ul style="margin-bottom: 0px;">
+				<li>Function can have any(!) number of parametrs</li>
+			</ul>
+			<div class="smallcode">
+			<code>var run = function(distance, speed) {</code><br />
+			&nbsp;&nbsp;&nbsp;<code>speed = speed || 10;</code><br />
+			&nbsp;&nbsp;&nbsp;<code>var time = distance / speed;</code><br />
+			&nbsp;&nbsp;&nbsp;<code>return time;</code><br />
+			<code>}</code>
+			</div>
+			<span>run (10,2,4,5,6);</span> <span id="subm">return &rarr; 5</span><br />
+			<span>run ( );</span> <span id="subm">return &rarr; undefined/10 &rarr; NaN</span>
+		</section>
+	</div></div>
+	<div class="slide wonder" id="wonderful_5"><div>
+		<section>
+			<header>
+				<h2>The facts good to know</h2>
+				<h3>JS has several features that makes difference with other developer languages:</h3>
+			</header>
+			
+			<ol>
+				<li>Что такое this и самые простые варианты его использования (например onclick). ссылка на объект в контексте которого возник event</li>
+			</ol>
+		</section>
+	</div></div>
+	
+	
+	
+	<div class="slide wonder" id="modul"><div>
+		<section>
+			<header>
+				<h2>A Modular Approach</h2>
+				<h3>Namespace</h3>
+			</header>
+			 <p style="margin-bottom: 15px;">One file  &rarr;  One xternal object &rarr; One module &rarr; One namespace</p>
+			
+		</section>
+	</div></div>
+	<div class="slide wonder" id="modul_1"><div>
+		<section>
+			<header>
+				<h2>A Modular Approach</h2>
+				<h3>Namespace</h3>
+			</header>
+			 <p style="margin-bottom: 20px;">One file  &rarr;  One xternal object &rarr; One module &rarr; One namespace</p>
+			<div style="font-size: 18px;">
+			<code>var namespace = namespace || {}; </code> <br />
+				<span style="font-size: 15px;">// здесь объект namespace представлен, как параметр функции  // с объявлением публичных методов и их свойств </span>
+			<code>(function( o ){  </code><br />
+			<code>o.foo = "foo";  </code><br />
+			<code>o.bar = function(){  </code><br />
+			<code>return "bar";  };</code><br />
+			<code>})(namespace);  </code><br />
+			<code>console.log(namespace);</code>
+			</div>
+		</section>
+	</div></div>
+	<div class="slide wonder" id="problem"><div>
+		<section>
+			<header>
+				<h2>Future JS Restructurization in Zimmer</h2>
+			</header>
+			 <div class="smallcode" style="float: left; width: 350px;">
+				// MASTER PAGE LEVEL<br />var OMS = function() {<br />var _private_data = ...;<br />function _private_method() {<br />}<br />return {<br />public_method_1 : function() {<br />// do stuff here<br />},<br />public_method_2 : function() {<br />// do stuff here<br />},<br />...<br />
+			</div>
+			 <!--<div style="float: left; width: 350px; font-size: 17px;">
+				$(document).ready(function() {<br />OMS.public_method_1();<br />OMS.public_method_2();<br />...});<br />// PAGE LEVEL<br />
+				var OMS.currentPage = function() {<br />var _private_data = ...;<br />function _private_method() {<br />}<br /> return { <br />public_method_1 : function() {<br />...<br />
+				this.userControlInstance1.hide();<br />...<br />},<br />public_method_2 : function() {
+			</div>-->
+		</section>
+	</div></div>
+	<div class="slide wonder" id="self_educ"><div>
+		<section>
+			<header>
+				<h2>Self Education</h2>
+			</header>
+			<a href="http://www.codecademy.com/#!/exercises/0" target="_blank">www.codecademy.com</a><br />
+			<img src="pictures/1.png" alt="" style="width: 500px;"/>
+			
+		</section>
+	</div></div>
+	<div class="slide wonder" id="self_educ_2"><div>
+		<section>
+			<header>
+				<h2>Self Education</h2>
+			</header>
+			<img src="pictures/codeadem.png" alt="" style="width: 830px"/>
+			
+		</section>
+	</div></div>
+	<div class="slide wonder" id="self_educ_1"><div>
+		<section>
+			<header>
+				<h2>Self Education</h2>
+			</header>
+			<a href="http://www.codeschool.com/" target="_blank">www.codeschool.com</a><br />
+			<img src="pictures/codeschool.png" alt="" style="width: 600px;"/>
+			
+		</section>
+	</div></div>
+	
+	<div class="slide wonder" id="self_educ_3"><div>
+		<section>
+			<header>
+				<h2>Self Education</h2>
+			</header>
+			<img src="pictures/school.png" alt="" style="width: 630px"/>
+			
+		</section>
+	</div></div>
+
+	<div class="slide wonder" id="ThankYou"><div>
+		<section>
+			<header>
+				<h2>JS presentation</h2>
+			</header>
+			<span>Vladislava Tikhomyrova</span><br />
+			<p>Thanks for you attention</p>
+			<ul>
+				<li><a href="http:/javascript.ru/" target="_blank">javascript.ru</a></li>
+				<li><a href="http://docs.jquery.com/Main_Page" target="_blank">http://docs.jquery.com/Main_Page</a></li>
+				<li><a href="http://jqapi.ru/" target="_blank">jqapi.ru</a></li>
+				<li><a href="http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/" target="_blank">Design patterns (book)</a></li>
+				<li><a href="http://www.shift-web.ru/essential-js-namespacing" target="_blank">Базовые namespace паттерны JavaScript</a></li>
+			</ul>
+			
+		</section>
+	</div></div>
+
+	<div class="progress"><div></div></div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/js2.js"></script>
+	<!-- Copyright © 2010–2011 Vadim Makeev, http://pepelsbey.net/ -->
+</body>
+</html>
