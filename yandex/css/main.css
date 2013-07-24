@@ -16,6 +16,7 @@ input[type="submit"]::-moz-focus-inner { padding: 0;border: 0 }
 body {
 	font-family: 'pt_sansregular', Arial, Sans-serif;
 }
+a:hover {text-decoration: none;}
 .wrapper {
 	padding: 45px 0;
 	width: 980px;
@@ -341,7 +342,11 @@ input.btn {
 		.pseudo_link {
 			color: #353434;
 			border-bottom: 1px dashed #353434;
+			height: 19px;
 			line-height: 16px;
+		}
+		.pseudo_link:hover {
+			border: none;
 		}
 		.list_links li:before {
 			content: "— ";
