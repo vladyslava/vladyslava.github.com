@@ -1,4 +1,5 @@
 * {margin: 0px;padding: 0px;}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 button::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner { padding: 0;border: 0 }
 
@@ -391,14 +392,8 @@ input.btn {
 	font-family: Verdana, Arial, Sans-serif;
 }
 .lteie9 .Article {	
-	column-count: 3;
-	column-gap: 20px;
-	column-rule: 1px dotted #BBB;
-	background-color: #FFFFFF;
-	border-top: 1px solid #999;
-	border-bottom: 1px solid #999;	
-	padding: 8px;
-	text-align: justify;
+	column-count: 2;
+	column-gap: 80px;
 }
 /* */
 .lteie9 .browser-list li span {*display: none;}
