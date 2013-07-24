@@ -321,15 +321,15 @@ input.btn {
 		-moz-column-gap: 20px;
 		-webkit-column-count: 2;
 		-webkit-column-gap: 0px;
-		margin-left: -20px;
+		margin-left: -15px;
 		}
 		.multicolumn  p {
 			text-indent: 15px;
 			margin-bottom: 21px;
 			font-size: 16px;
 			line-height: 1.4;
-			padding-right: 60px;
-			padding-left: 20px;
+			padding-right: 55px;
+			padding-left: 15px;
 		}
 	.list_links {
 		list-style: none;
